@@ -1,3 +1,4 @@
+require 'pry'
 class Vehicle
 
     attr_accessor :wheel_size, :wheel_number
@@ -19,9 +20,11 @@ end
 class Car < Vehicle
     def go
         "VRRROOOOOOOOOOOOOOOOOOOOOOOM!!!!!"
+       
     end
 
 end
 
 car=Car.new(23,4)
 p car.go
+p Car.superclass
